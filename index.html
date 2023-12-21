@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css.css">
+    <title>Calcular IMC</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a href="https://superafarma.com.br/calcule-o-seu-imc-calculadora-peso-ideal/">TABELA IMC</a></li>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <div class="form">
+            <form method="get">
+                <label>Nome e Sobrenome</label><br>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome completo">
+                <br><br>
+
+                <label>Idade</label><br>
+                <input type="number" min="0" name="age" id="age" placeholder="Digite suaidade">
+                <br><br>
+
+                <label>Peso <span>*</span></label><br>
+                <input type="text" name="weight" id="peso" placeholder="Digite seu peso">
+                <br><br>
+
+                <label>Altura <span>*</span></label><br>
+                <input type="text" name="height" id="altura" placeholder="Digite sua altura">
+                <br><br>
+                <input onclick="calcula()" type="button" id="bt" value="Calcular">
+
+            </form>
+        </div>
+
+        <div class="resultado">
+            <p id="resposta"></p>
+        </div>
+    </main>
+<script src="imc.js"></script>
+</body>
+</html>
